@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Albert Sans", serif;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+}
+
+/* Default Light Theme */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    position: fixed;
+    top: 26px;
+    right: -10px;
+    color: white;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease-in;
+}
+
+.invert {
+    filter: invert(1);
+}
+
+nav {
+    display: flex;
+    justify-content: start;
+    margin: 40px;
+    gap: 120px;
+    width: 800px;
+}
+
+nav li {
+    color: inherit;
+    list-style: none;
+    font-size: large;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+nav li a {
+    color: inherit;
+    list-style: none;
+    font-size: large;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+li::marker {
+    content: none;
+}
+
+i {
+    display: none;
+}
+
+.navitem {
+    display: none;
+}
+
+.stuff {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 230px;
+}
+
+.stuff h1{
+    font-size: 70px;
+    font-weight: 300;
+    text-align: center;
+}
+
+
+@media (max-width: 800px) {
+    nav li {
+        display: none;
+    }
+
+    i {
+        display: inline;
+        font-size: 64px;
+        margin-top: 27px;
+        margin-left: 30px;
+    }
+
+    .theme-toggle {
+        height: 70px;
+        right: 30px;
+        top: 55px;
+    }
+
+    .hamburger {
+        position: fixed;
+        top: 0;
+        height: 100%;
+        width: 70%;
+        background-color: rgb(5, 5, 5);
+        transform: translateX(-100%);
+        transition: all 0.3s ease-out;
+    }
+
+    .hamburger i {
+        font-size: 90px;
+        color: white;
+        position: absolute;
+        top: 25px;
+        left: 25px;
+
+    }
+
+    .navitem {
+        display: block;
+        margin-top: 300px;
+        /* margin-left: 60px; */
+    }
+
+    .navitem li {
+        list-style: none;
+        font-size: 60px;
+        font-weight: 600;
+        color: white;
+        margin-top: 50px;
+        margin-left: 60px;
+        margin-bottom: 50px;
+    }
+
+    .stuff {
+        width: 234vw;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 600px;
+    }
+
+    .stuff h1{
+        text-align: center;
+        width: 80%;
+        font-size: 90px;
+    }
+}
