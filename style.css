@@ -78,6 +78,7 @@ i {
 }
 
 .stuff {
+    height: 70vh;
     display: flex;
     flex-direction: column;
     gap: 30px;

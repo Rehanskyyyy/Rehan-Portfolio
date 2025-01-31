@@ -55,5 +55,5 @@ hamburgericon.addEventListener("click", () => {
 })
 
 close.addEventListener("click", () => {
-    hamburger.style.transform = "translateX(-100%)" 
+    hamburger.style.transform = "translateX(-102%)" 
 })
