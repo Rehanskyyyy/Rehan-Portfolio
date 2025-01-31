@@ -153,6 +153,7 @@ i {
     }
 
     .stuff {
+        height: 30vh;
         width: 234vw;
         display: flex;
         flex-direction: column;
